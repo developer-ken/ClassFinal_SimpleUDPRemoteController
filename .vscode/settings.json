@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "advio.h": "c",
+        "types.h": "c",
+        "protocol.h": "c"
+    }
+}
