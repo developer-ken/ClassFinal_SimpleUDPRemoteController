@@ -11,4 +11,9 @@
 ## 验收答辩  
 1. UDP是无连接的、双方对等的协议，因此UDP通信实现部分叫udp_peer  
 2. 端口号用以在网络通信层面区分同一主机上的不同Socket。此项目使用的端口号在这里：[protocol.h#L32](https://github.com/developer-ken/ClassFinal_SimpleUDPRemoteController/blob/master/protocol.h#L32)  
-验收答辩前请完整阅读程序、尽量理解[udp_peer.c](https://github.com/developer-ken/ClassFinal_SimpleUDPRemoteController/blob/master/udp_peer.c)，此文件包含实现了UDP端到端通信的代码。
+  
+验收答辩前请完整阅读程序，着重理解以下重点：
+1. [udp_peer.c](https://github.com/developer-ken/ClassFinal_SimpleUDPRemoteController/blob/master/udp_peer.c)，UDP初始化、收、发相关代码  
+2. [protocol.c](https://github.com/developer-ken/ClassFinal_SimpleUDPRemoteController/blob/master/protocol.c)，网络通信协议，包含一个数据包的构成、打包、解包相关代码  
+3. [Stepper.c](https://github.com/developer-ken/ClassFinal_SimpleUDPRemoteController/blob/master/hwdrivers/Stepper.c)，步进电机控制相关代码，用到了多线程(pthread)，仔细验收的话可能会问到  
+4. 我能想到的就这些，其它的都比较简单，看造化吧
